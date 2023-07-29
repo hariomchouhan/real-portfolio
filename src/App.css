@@ -1,19 +1,50 @@
 :root {
     --blue: #643dc5;
+    --blueLight: #9877e9;
+    --black: #242d49;
+    --gray: #788097;
+    --boxShadow: 0 12px 15px 1px rgba(99, 41, 247, 1);
+    --white: #F2F5F9;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
-}
-
-body{
-    width: 100vw;
+    /* overflow: hidden; */
 }
 
 .container {
-    width: 1200px;
-    margin: auto;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+    /* display: none; */
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .blur{
+        display: none;
+    }
+  }
