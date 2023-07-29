@@ -12,7 +12,7 @@ const Header = () => {
         </div>
 
 {/* <div className="h-btn"> */}
-        <button className="h-btn h-btn-text">Contact</button>
+        <button className="btn h-btn">Contact</button>
 {/* </div> */}
       </div>
     </div>

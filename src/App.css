@@ -1,50 +1,74 @@
 :root {
-    --blue: #643dc5;
-    --blueLight: #9877e9;
-    --black: #242d49;
-    --gray: #788097;
-    --boxShadow: 0 12px 15px 1px rgba(99, 41, 247, 1);
-    --white: #F2F5F9;
+  --blue: #643dc5;
+  --blueDark: #4f14e6;
+  --blueLight: #9877e9;
+  --black: #242d49;
+  --gray: #788097;
+  --boxShadow: 0 12px 15px 1px rgba(99, 41, 247, 1);
+  --boxShadowHover: 0 10px 12px 1px rgba(99, 41, 247, 1);
+  --white: #f2f5f9;
+  --lightBlue: #e1e8ef;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* overflow: hidden; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    width: 95%;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 95%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-.blur{
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    z-index: -9;
-    top: -18%;
-    left: 56%;
-    filter: blur(72px);
-    /* display: none; */
-  }
+.btn {
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background: linear-gradient(180deg, #643dc5 26.71%, #5023c2 99.36%);
+  box-shadow: var(--boxShadow); 
+}
 
+.btn:hover {
+  background: linear-gradient(180deg, #5216e9 26.71%, #643dc5 99.36%);
+}
 
-  @media screen and (max-width: 600px) {
-    .blur{
-        display: none;
-    }
+.line {
+  width: 5rem;
+  height: 5px;
+  background: var(--blue);
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+  /* display: none; */
+}
+
+@media screen and (max-width: 700px) {
+  .blur {
+    display: none;
   }
+}

@@ -1,0 +1,81 @@
+#Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.c-heading {
+  font-size: 3rem;
+}
+.c-heading span {
+  color: var(--blue);
+}
+
+.c-desc {
+  color: var(--gray);
+  width: 44%;
+  text-align: center;
+}
+
+.c-box {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.c-left {
+  width: 80%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.c-card {
+  background: var(--lightBlue);
+  width: 18rem;
+  border-radius: 1rem;
+  align-self: center;
+  display: flex;
+}
+
+.c-icon {
+  margin: 0.7rem 0;
+  margin-left: 0.7rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  align-self: center;
+  background: var(--blue);
+}
+
+.c-detail {
+  margin: 0.7rem 0;
+  margin-left: 0.7rem;
+  align-self: center;
+}
+
+.c-right {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .c-box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .c-desc {
+    width: 90%;
+  }
+  .c-left {
+    align-self: center;
+  }
+}

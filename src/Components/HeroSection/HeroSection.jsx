@@ -3,11 +3,11 @@ import "./HeroSection.css";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import MyPic from "../../assets/Home.png";
-import glassesimoji from "../../assets/glassesimoji.png";
 
 const HeroSection = () => {
   return (
     <div id="Hero">
+      {/* left side */}
       <div className="hero-left">
         <div className="hero-name">
           <span>Hy! I Am</span>
@@ -19,25 +19,19 @@ const HeroSection = () => {
         </div>
 
         <div className="hero-icons">
-          <Link to="https://github.com/hariomchouhan" target="_blank">
+          <Link to="https://github.com/hariomchouhan">
             <AiFillGithub />
           </Link>
-          <Link
-            to="https://www.linkedin.com/in/hariom-chouhan-ab6b7620a"
-            target="_blank"
-          >
+          <Link to="https://www.linkedin.com/in/hariom-chouhan-ab6b7620a">
             <AiFillLinkedin />
           </Link>
         </div>
       </div>
 
+      {/* right side */}
       <div className="hero-right">
-        <img src={MyPic} alt="Hariom Chouhan" width={350} height={200} />
-        <img src={MyPic} alt="" width={350} height={300} />
-        <img src={glassesimoji} alt="" />
+        <img src={MyPic} alt="Hariom Chouhan" className="hero-image" />
       </div>
-
-      
     </div>
   );
 };

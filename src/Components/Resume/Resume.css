@@ -1,0 +1,97 @@
+.Resume {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  /* align-items: center; */
+  padding: 10rem 0;
+  /* background-color: red; */
+  /* margin-bottom: 2rem; */
+}
+
+.r-left {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.r-name {
+  color: var(--black);
+  font-size: 4rem;
+}
+
+.r-name > :nth-child(2) {
+  color: var(--blue);
+}
+
+.r-right {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.r-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.r-card span {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--lightBlue);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.r-line {
+  width: 60%;
+}
+
+.college {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.college span {
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+    /* display: none; */
+  }
+  
+    @media screen and (max-width: 700px) {
+      .blur{
+          display: none;
+      }
+    }
+@media screen and (max-width: 700px) {
+  .Resume {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .r-name{
+    font-size: 3.4rem;
+  }
+
+}

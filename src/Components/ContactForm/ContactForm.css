@@ -1,0 +1,39 @@
+.c-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.c-form input{
+    border: 2px solid var(--blue);
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    width: 25rem;
+    font-size: 1.2rem;
+    outline: none;
+    min-width: 20rem;
+    max-width: 25rem;
+}
+
+.c-form textarea{
+    border: 2px solid var(--blue);
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    min-width: 20rem;
+    max-width: 25rem;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+@media screen and (max-width: 800px) {
+    .c-form input {
+        min-width: 15rem;
+        max-width: 20rem;
+    }
+    .c-form textarea {
+        min-width: 15rem;
+        max-width: 20rem;
+    }
+}
