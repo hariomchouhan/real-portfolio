@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./About.css";
-import { BsFillPhoneFill } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
-import { CiLocationOn } from "react-icons/ci";
+import { themeContext } from "../../ContextAPI/ThemeContext";
+// import { BsFillPhoneFill } from "react-icons/bs";
+// import { AiOutlineMail } from "react-icons/ai";
+// import { CiLocationOn } from "react-icons/ci";
 
 const About = () => {
+  const {color} = useContext(themeContext)
   return (
     <div id="About">
       <h2 className="a-heading">
-        <span>About</span> <span>Me</span>
+        <span>About</span> <span style={{color: `${color}`}}>Me</span>
       </h2>
-      <div className="line"></div>
+      <div className="line" style={{background: `${color}`}}></div>
       <div className="a-box">
         <div className="a-left">
           <p className="para">
-            <span>My</span> name is <span>Hariom Chouhan</span> an expert in Web
+            <span>My</span> name is <span style={{color: `${color}`}}>Hariom Chouhan</span> an expert in Web
             development. I have over 7 project experiences within the journey.
             My specialty is in React, and creating attractive Responsive
             Websites and web apps using React, TailwindCSS, CSS, HTML,

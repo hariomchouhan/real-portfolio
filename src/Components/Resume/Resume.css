@@ -26,6 +26,10 @@
   color: var(--blue);
 }
 
+.r-btn{
+  margin-top: 2rem;
+  cursor: pointer;
+}
 .r-right {
   width: 100%;
   display: flex;

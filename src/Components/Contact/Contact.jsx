@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Contact.css';
 import {BiPhoneCall} from 'react-icons/bi'
 import {AiOutlineMail} from 'react-icons/ai'
 import {CiLocationOn} from 'react-icons/ci'
 import ContactForm from '../ContactForm/ContactForm';
+import { themeContext } from '../../ContextAPI/ThemeContext';
 
 const Contact = () => {
+    const {color} = useContext(themeContext)
   return (
     <div id='Contact'>
-        <h2 className='c-heading'>Let's Discuss Your <span>Project</span></h2>
+        <h2 className='c-heading'>Let's Discuss Your <span style={{color: `${color}`}}>Project</span></h2>
         <p className='c-desc'>Let's make something new, different and more meaningful or make thing more visual and conceptual.</p>
         <div className="c-box">
             <div className="c-left">
                 <div className='c-card'>
-                    <div className='c-icon'>
+                    <div className='c-icon' style={{background: `${color}`}}>
                         <BiPhoneCall/>
                     </div>
                     <div className='c-detail'>
@@ -22,7 +24,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='c-card'>
-                    <div className='c-icon'>
+                    <div className='c-icon' style={{background: `${color}`}}>
                         <AiOutlineMail/>
                     </div>
                     <div className='c-detail'>
@@ -31,7 +33,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='c-card'>
-                    <div className='c-icon'>
+                    <div className='c-icon' style={{background: `${color}`}}>
                         <CiLocationOn/>
                     </div>
                     <div className='c-detail'>
