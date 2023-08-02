@@ -16,7 +16,7 @@ const Portfolio = () => {
       <div className="p-box">
         {projectData.map((data, index) => (
           <Link key={index} to={data.link} className="p-card">
-            <img src={data.img} alt="" className="p-image" />
+            <img src={data.img} alt="" className="p-image" draggable="false" />
             <p className="p-title" style={{ color: `${color}` }}>
               {data.title}
             </p>

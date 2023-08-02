@@ -1,22 +1,22 @@
 .toggle {
-    display: flex;
-    justify-content: space-between;
-    border: 3px solid var(--blue);
-    border-radius: 1rem;
-    position: relative;
-    padding: 2px;
-    cursor: pointer;
-    gap: 6px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid var(--blue);
+  border-radius: 1rem;
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
+  gap: 6px;
 }
 
-.toggle > *{
-    width: 1.2rem;
-    height: 1.2rem;
-    color: var(--blue);
+.toggle > * {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: var(--blue);
 }
 
 .t-button {
-    border-radius: 100%;
-    background: var(--blue);
-    position: absolute;
+  border-radius: 100%;
+  background: var(--blue);
+  position: absolute;
 }

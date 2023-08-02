@@ -6,24 +6,24 @@ import { themeContext } from "../../ContextAPI/ThemeContext";
 // import { CiLocationOn } from "react-icons/ci";
 
 const About = () => {
-  const {color} = useContext(themeContext)
+  const { color } = useContext(themeContext);
   return (
     <div id="About">
       <h2 className="a-heading">
-        <span>About</span> <span style={{color: `${color}`}}>Me</span>
+        <span>About</span> <span style={{ color: `${color}` }}>Me</span>
       </h2>
-      <div className="line" style={{background: `${color}`}}></div>
+      <div className="line" style={{ background: `${color}` }}></div>
       <div className="a-box">
         <div className="a-left">
           <p className="para">
-            <span>My</span> name is <span style={{color: `${color}`}}>Hariom Chouhan</span> an expert in Web
-            development. I have over 7 project experiences within the journey.
-            My specialty is in React, and creating attractive Responsive
-            Websites and web apps using React, TailwindCSS, CSS, HTML,
-            Bootstrap, Node, MongoDB, and Express.
+            <span>My</span> name is{" "}
+            <span style={{ color: `${color}` }}>Hariom Chouhan</span> an expert
+            in Web development. I have over 7 project experiences within the
+            journey. My specialty is in React, and creating attractive
+            Responsive Websites and web apps using React, TailwindCSS, CSS,
+            HTML, Bootstrap, Node, MongoDB, and Express.
           </p>
         </div>
-
 
         {/* <div className="a-right">
           <div className="a-card">

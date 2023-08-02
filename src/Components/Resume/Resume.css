@@ -3,9 +3,9 @@
   justify-content: space-between;
   display: flex;
   /* align-items: center; */
-  padding: 10rem 0;
+  padding: 5rem 0;
   /* background-color: red; */
-  /* margin-bottom: 2rem; */
+  margin-bottom: 2rem;
 }
 
 .r-left {
@@ -13,8 +13,8 @@
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .r-name {
@@ -26,7 +26,7 @@
   color: var(--blue);
 }
 
-.r-btn{
+.r-btn {
   margin-top: 2rem;
   cursor: pointer;
 }
@@ -71,31 +71,28 @@
   font-size: 1.3rem;
   font-weight: 600;
 }
-.blur{
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    z-index: -9;
-    top: -18%;
-    left: 56%;
-    filter: blur(72px);
-    /* display: none; */
-  }
-  
-    @media screen and (max-width: 700px) {
-      .blur{
-          display: none;
-      }
-    }
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+  /* display: none; */
+}
+
 @media screen and (max-width: 700px) {
   .Resume {
     flex-direction: column;
     gap: 2rem;
   }
-  .r-name{
+  .r-name {
     font-size: 3.4rem;
   }
-
+  .r-left {
+    align-items: center;
+  }
 }
